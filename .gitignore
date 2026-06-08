@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+
+# Build output and generated artifacts
+main.js
+main.js.map
+*.map
+*.tsbuildinfo
+dist/
+build/
+coverage/
+
+# Package manager caches and state
+.npm/
+.pnpm-store/
+.yarn/*
+!.yarn/releases/
+!.yarn/plugins/
+!.yarn/sdks/
+!.yarn/versions/
+
+# Logs and diagnostics
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Agent and assistant local metadata
+.agents/
+.codex/
+.claude/
+CLAUDE.md
+AGENTS.md
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Obsidian vault/workspace metadata
+data.json
+.obsidian/workspace*
+.obsidian/cache/
+.obsidian/plugins/*/data.json
+.trash/

@@ -1,0 +1,10 @@
+{
+	"id": "git-sync-auto",
+	"name": "Git Sync Auto",
+	"version": "1.0.1",
+	"minAppVersion": "1.12.7",
+	"description": "Automatically sync your vault with Git on every change.",
+	"author": "LuisEC",
+	"authorUrl": "https://github.com/LuisEC2016",
+	"isDesktopOnly": true
+}

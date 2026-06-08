@@ -1,0 +1,31 @@
+{
+	"name": "git-sync-auto",
+	"version": "1.0.1",
+	"description": "Automatically sync your Obsidian vault with Git.",
+	"main": "main.js",
+	"type": "commonjs",
+	"scripts": {
+		"dev": "node build.mjs --watch",
+		"build": "node build.mjs",
+		"clean": "node -e \"require('fs').rmSync('main.js', { force: true })\"",
+		"lint": "tsc --noEmit",
+		"version": "node scripts/bump-version.mjs && git add manifest.json versions.json",
+		"release": "node scripts/release.mjs",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:coverage": "vitest run --coverage"
+	},
+	"keywords": [],
+	"author": "LuisEC",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^22.0.0",
+		"@vitest/coverage-v8": "^4.1.8",
+		"builtin-modules": "^5.2.0",
+		"esbuild": "^0.25.0",
+		"obsidian": "latest",
+		"tslib": "^2.4.0",
+		"typescript": "^5.8.3",
+		"vitest": "^4.1.8"
+	}
+}
